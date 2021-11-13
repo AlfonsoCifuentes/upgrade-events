@@ -22,7 +22,7 @@ boton.addEventListener("click", operarClick);
 //1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input.
 
 let operarFocus = function(evento){
-    console.log(inputFocus.value)
+    console.log(evento.target.value)
 }
 
 inputFocus.addEventListener("focus", operarFocus);
@@ -30,7 +30,7 @@ inputFocus.addEventListener("focus", operarFocus);
 //1.3 Añade un evento 'input' que ejecute un console.log con el valor del input.
 
 let operarInput = function(evento){
-    console.log(inputFocus.value)
+    console.log(evento.target.value)
 }
 
 inputValue.addEventListener("input", operarInput);
